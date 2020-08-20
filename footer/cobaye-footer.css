@@ -467,3 +467,19 @@ nav ul li a{
 .progress .progress_inner input[type=radio] {
   display: none;
 }
+
+/* ---------------------------------------------------*/
+/* ----------- FOOTER -------------------------------*/
+/* --------------------------------------------------*/
+.emoticones li {
+  list-style: none;
+  display:inline-grid;
+  justify-content: space-around;
+  text-decoration: none;
+  font-size: 0.5em;
+  margin-left: 3em;
+}
+
+footer a{
+  font-family: 'Quicksand', sans-serif;
+}
