@@ -1,5 +1,9 @@
 <template lang="html">
 
+  <blog-post
+    v-bind:title="post.title + ' par ' + post.author.name"
+  ></blog-post>
+
   <div class="wrapper">
     <div class="profile">
       <div class="profile_img_info">
@@ -73,14 +77,62 @@
 <script>
 export default {
   name: wrapper,
+  name: blog-post,
+  name: video-projet,
 
-  props:{
-    : {
-      type: ,
-
-    }
+  data(){
+    return{
+    //on met la data dans une boite vide = restaurants
+    projetID: ,
+     projet: null,
+     nom: "utopia",
+     type: "ecolo, social, éducatif",
+     investisseurs: false,
+     entrepreneurs: false,
+     success: false,
+     successDelete: false,
+     successModify: false,
   }
+},
+
+postProjet() {
+  const axios = require('axios');
+  axios.post(`http://localhost:3000/projet/`, {
+      nom: this.nom,
+      type: this.type,
+  })
+  .then(() => {
+    this.nom = "";
+    this.type = "";
+    this.success = true;
+  })
+  .catch((err) => {
+    console.log(err);
+  })
+},
+
+methods:{
+  // on a rajouter async et await pour eviter then et catch
+//  async getRestaurants(){
+
+    getProjets(){
+    // on définit axios
+    const axios = require('axios');
+    //on met l'adresse de notre API qu'on veut récupérer format json
+    //axios.get('https://restop-toulouse.herokuapp.com/restos')
+
+
+    //on change d'api pour la suite de l'exo
+   axios.get('http://localhost:3000/projets/')
+   //on ordonne les données en les mettant dans une petite boite data qui va etre rempli de notre get
+   // sachant que le nom du tableau de l'adresse s'appelle data c'est pour ca qu'on a mis data a la fin de response
+   .then(response => (this.projets = response.data))
+
+
+
+
 }
+
 </script>
 
 <style lang="css" scoped>
