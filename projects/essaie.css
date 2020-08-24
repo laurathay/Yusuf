@@ -74,7 +74,7 @@ article{
 }
 
 @media screen and (max-width:864px) {
-  .table { 
+  .table {
     position: relative;
     display: table;
     width: 100%;
@@ -215,21 +215,19 @@ figure {
 /* ----------------------------------- */
 
 
-.billboard__content{
+.texte{
       font-size: 1em;
       margin-bottom: .5rem;
       line-height: 1.2;
 }
 
-.billboard__action a{
+.bouton{
       color: #007bff;
       text-decoration: none;
       background-color: transparent;
 }
 
-.billboard__content, .billboard__action a{
-      /* display: flex; */
-}
+
 
 .btn{
   display: inline-block;
@@ -246,4 +244,10 @@ figure {
     line-height: 1.5;
     border-radius: .25rem;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+footer, .texte .bouton{
+  display: flex;
+  /* margin-left: 20em; */
+  justify-content: space-around;
 }
