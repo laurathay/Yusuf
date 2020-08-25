@@ -121,34 +121,37 @@ figure {
 }
 
 /* article par dessus le tableau */
-#project_ca-commence-par-moi_description{
-  display: block;
-  /* margin-top: -75em; */
-  margin-right: 20em;
-}
-#project_annonay_description{
-  display: block;
-  margin-top: 51em;
-  margin-right: 20em;
-}
+@media screen and (min-width:1264px)  {
 
-#project_cacao-forest_description{
-  display: block;
-  margin-top: 110em;
-  margin-right: 20em;
-}
+        #project_ca-commence-par-moi_description{
+          display: block;
+          /* margin-top: -75em; */
+          margin-right: 20em;
+        }
+        #project_annonay_description{
+          display: block;
+          margin-top: 51em;
+          margin-right: 20em;
+        }
 
-#project_please-come-inside_description{
-  display: block;
-  margin-top: 166em;
-  margin-right: 20em;
+        #project_cacao-forest_description{
+          display: block;
+          margin-top: 110em;
+          margin-right: 20em;
+        }
+
+        #project_please-come-inside_description{
+          display: block;
+          margin-top: 166em;
+          margin-right: 20em;
+        }
+        /*
+        #project_away-hostel-and-coffee-shop_description{
+          display: block;
+          margin-top: 59em;
+          margin-right: 6em;
+        }*/
 }
-/*
-#project_away-hostel-and-coffee-shop_description{
-  display: block;
-  margin-top: 59em;
-  margin-right: 6em;
-}*/
 
 @media screen and (max-width:864px){
   #project_ca-commence-par-moi_description{
