@@ -533,7 +533,7 @@ nav ul li a{
 @media screen and (max-width:864px){
   .accueil{
 
-      display: grid;
+      /* display: grid; */
       grid-gap: 2rem;
       grid-template-columns: repeat(5, 150px);
       grid-template-rows: repeat(5, 100px);
@@ -736,7 +736,7 @@ nav ul li a{
 
 .wrap {
     padding: 50px 0px;
-    background-image: linear-gradient(20deg, #8598ca, #a9eceb);
+    /* background-image: linear-gradient(20deg, #8598ca, #a9eceb); */
   }
 
   .wrap {
@@ -774,11 +774,11 @@ nav ul li a{
   }
 
   .item:nth-child(1) .txt {
-    background-color: #f0aec1;
+    background-color: pink;
   }
 
   .item:nth-child(2) .txt {
-    background-color: #2afdd0;
+    background-color: #2e938f;
   }
 
   .item:nth-child(3) .txt {
@@ -786,5 +786,5 @@ nav ul li a{
   }
 
   .item:nth-child(4) .txt {
-    background-color: #95dbd6;
+    background-color: #8abac3;
   }
