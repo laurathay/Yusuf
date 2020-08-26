@@ -543,12 +543,14 @@ footer .social a {
   font-weight: bold;
 }
 footer .social a:hover {
-  background-color: #222;
+  background-color: #8abac3;
 }
 
 .linked {
-  background-color: #1E83AE;
-  font-size: 1.2em;
+ background-color: #8abac3;
+
+/*  background-color: #1E83AE;
+*/  font-size: 1.2em;
   width: 20%;
 }
 
@@ -584,7 +586,7 @@ footer {
 }
 footer .footer {
   z-index: 1;
-  --footer-background:#ED5565;
+  --footer-background:#8abac3;
   display: grid;
   position: relative;
   grid-area: footer;
